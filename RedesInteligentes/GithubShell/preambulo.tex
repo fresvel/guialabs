@@ -1,0 +1,88 @@
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+\definecolor{darkcol}{RGB}{ 7, 7, 50 }
+\definecolor{linkcol}{RGB}{ 7, 70, 150 }
+\definecolor{cmdcol}{RGB}{ 7, 100, 150 }
+\usepackage{tabularx}
+\usepackage{ifthen}
+\usepackage{xstring, xifthen}
+
+\usepackage{float}
+\usepackage{hyperref}
+
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={155mm,247mm},
+ left=30mm,
+ top=0mm,
+ %top=25mm
+ }
+
+% Configuración de estilo para comandos en consola
+
+
+
+\newtcolorbox{terbox}{
+    colback=cmdcol!10,
+    colupper=darkcol,
+    colframe=cmdcol,
+    %sharp corners,
+    boxrule=1pt,
+    left=10pt,
+    right=10pt,
+    top=5pt,
+    bottom=5pt,
+    breakable,
+    fontupper=\ttfamily\fontsize{12}{14}\selectfont,
+}
+
+\hypersetup{
+    colorlinks=true, % Desactiva el color de los enlaces
+    %pdfborder={0 0 0} % Elimina el borde de los enlaces
+    urlcolor=linkcol!70
+}
+
+
+
+
+
+\usepackage{caption}
+
+\captionsetup{
+    font=small, % Tamaño de la fuente (puedes usar tiny, small, normalsize, large, etc.)
+    labelfont={bf, it}, % Estilo de la etiqueta (puedes usar bf para negrita, it para cursiva, etc.)
+    labelsep=colon, % Separador entre la etiqueta y el texto del caption (puedes usar colon, period, space, etc.)
+    textfont=it, % Estilo del texto del caption
+    justification=centering, % Alineación del texto (centering, raggedright, raggedleft)
+    singlelinecheck=false, % Alineación para captions de una sola línea
+}
+
+
+
+\renewcommand{\figurename}{Ilustración} % Cambia "Figura" a "Ilustración"
+
+
+
+
+
+\setlength{\parindent}{0pt}
+
+
+
+
+
+
+
+
+
+
+\input{header} %geometry top 0
